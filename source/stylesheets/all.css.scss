@@ -8,7 +8,19 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
+.hr {
+  width: 100%;
+  margin: 1rem 0;
+  border-top-color: #eee;
+  border-bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+// ----------LANDING PAGE STYLES
 
 #landing_background {
   position: relative;
@@ -45,6 +57,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-decoration: none
 }
 
+
+// ----------MASTHEAD STYLES
+
 .masthead-title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -59,73 +74,62 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding-left: 0;
   margin-bottom: .75rem;
 }
-.masthead-hr {
-  width: 100%;
-  margin: 1rem 0;
-  border-top-color: #eee;
-  border-bottom: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 .masthead-nav .nav-item {
   margin-bottom: .75rem;
-  .nav-link {
-    color: rgb(130, 130, 130);
-    margin: 5px 5px 5px 5px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-    text-transform: lowercase;
-  }
-  .nav-link:hover {
-    text-decoration: none;
-    color: rgb(191, 55, 100);
-  }
+
 }
 .masthead-nav .nav-item-active {
-  background-color: rgb(164, 164, 164);
-  .nav-link {
-    color: rgb(255, 255, 255);
+  .link {
+    color: rgb(0, 0, 0);
   }
-  .nav-link:hover {
+  .link:hover {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
+}
+
+
+.link {
+  color: rgb(130, 130, 130);
+  // margin: 5px 5px 5px 5px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.link:hover {
+  text-decoration: none;
+  color: rgb(191, 55, 100);
+}
+.img-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.img-container img{
+  margin: auto;
 }
 @media (min-width: 768px) {
   .masthead {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 24%;
-    max-width: 380px;
-    padding: 3rem 2rem;
+          position: fixed;
+          width: 16.66666666%;
   }
   .content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 76%;
-    padding: 3rem 2rem;
+          float: right;
+          width: 83.33333333%
   }
 }
-
-@media (min-width: 768px) and (min-height: 700px) {
-  .masthead {
-    position: fixed;
+@media (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .masthead-lead {
+    text-align: center;
   }
 }
-
-@media (min-width: 1170px) {
-  .masthead {
-    width: 25%;
-  }
-}
-img {
-  width: auto;
-  height: auto;
+p {
+    text-indent: 50px;
 }
