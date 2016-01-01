@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .hr {
   width: 100%;
   margin: 1rem 0;
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: rgba(251, 248, 237, 0.9);
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 9em;
+  font-size: 7em;
   text-align: center;
   text-transform: uppercase;
   -o-transition:.5s;
@@ -60,22 +61,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 // ----------MASTHEAD STYLES
 
-.masthead-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+h1 {
   font-size: 2.5em;
-  text-transform: uppercase;
 }
+h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
 .masthead-lead {
   font-size: 1.2em;
 }
 .masthead-nav {
+  font-size: 1em;
   list-style: none;
   padding-left: 0;
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 }
 .masthead-nav .nav-item {
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 
 }
 .masthead-nav .nav-item-active {
@@ -98,10 +102,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -webkit-transition:.5s;
   transition:.5s;
 }
-.link:hover {
+.link:hover, .link:focus {
   text-decoration: none;
   color: rgb(191, 55, 100);
+  outline: none;
 }
+
 .img-container {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -123,13 +129,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
-  p {
-    text-align: justify;
-  }
   .masthead-lead {
     text-align: center;
   }
 }
-p {
-    text-indent: 50px;
+.list-unstyled {
+  font-size: 1.2em;
+  text-align:center;
+}
+.gotcha {
+  display: none;
 }
